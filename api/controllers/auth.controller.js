@@ -12,7 +12,7 @@ export const signup = async (req, res, next) => {
     username === "" ||
     email === "" ||
     password === ""
-  ) {
+  ){
     next(errorHandler(400, 'All fields are required'));
   }
 
